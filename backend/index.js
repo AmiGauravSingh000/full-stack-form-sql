@@ -16,41 +16,13 @@ app.post('/submit', async (req, res) => {
     req.body.email,
     req.body.mobile
   ];
-  // try {
-  //   const [result] = await db.execute(query, [name, email, mobile]);
-  //   res.send('User added successfully');
-  // } catch (err) {
-  //   console.error(err);
-  //   res.status(500).send('Error adding user');
-  // }
+
   db.query(q,[values],(err,data)=>{
     if(err) return res.json(err);
-    return res.json("book has been successfully created");
+    return res.json("User has been Added successfully");
   })
 
 });
-
-
-// app.post('/books', (req,res)=>{
-//   const q = "INSERT INTO books (`title`, `descri`,`price`,`cover`) VALUES (?)";
-//   const values = [
-//       req.body.title,
-//       req.body.descri,
-//       req.body.price,
-//       req.body.cover
-//   ];
-
-//   db.query(q,[values],(err,data) =>{
-//       if(err) return res.json(err);
-//       return res.json("book has been successfully created");
-//   })
-
-// })
-
-
-
-
-
 
 
 

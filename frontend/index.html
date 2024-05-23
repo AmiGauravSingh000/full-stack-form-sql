@@ -9,27 +9,29 @@
 </head>
 <body>
   <div class="container">
-    <h1>Submit Your Details</h1>
-    <form id="userForm">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="mobile">Mobile Number:</label>
-        <input type="text" id="mobile" name="mobile" required>
-      </div>
-      
-      <button type="submit" class="btn">Submit</button>
-    </form>
-    <button id="toggleTable" class="btn">Show Table</button>
-    <div class="table-container" style="display: none;">
+    <div class="form-container">
+      <h1>Submit Your Details</h1>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <input type="text" id="mobile" name="mobile" required>
+        </div>
+        
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <button id="toggleTable" class="btn">Show Table</button>
+    </div>
+    <div class="table-container">
       <table id="userTable" class="table">
         <thead>
           <tr>
